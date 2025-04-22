@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.sayronarmy.OrkBuilders;
 
 import com.mycompany.sayronarmy.Ork;
@@ -19,7 +15,7 @@ public class OrkBuilder {
     protected String name;
     protected String weapon;
     protected String armor;
-    protected String banner;
+    public String banner;
     protected int strength;
     protected int agility;
     protected int intelligence;
