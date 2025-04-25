@@ -2,8 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.sayronarmy;
-import com.github.javafaker.Faker;
+package com.mycompany.sayronarmy.model;
 
 /**
  *
@@ -46,18 +45,20 @@ public class Ork {
     public int getHealth() { return health; }
     public Tribe getTribe() { return tribe; }
     public OrkType getType() { return type; }
+    
 
     @Override
     public String toString() {
-        return String.format("Ork [name=%s, tribe=%s, type=%s, strength=%d, agility=%d, intelligence=%d, health=%d, weapon=%s, armor=%s, banner=%s]",
-                name, tribe, type, strength, agility, intelligence, health, weapon, armor, banner);
-    }
+    return String.format("Орк [name=%s, tribe=%s, type=%s, strength=%d, agility=%d, intelligence=%d, health=%d, weapon=%s, armor=%s, banner=%s]",
+            name, tribe, type, strength, agility, intelligence, health, 
+            weapon, armor, banner);
+}
 
     public enum Tribe {
-        MORDOR("Mordor"),
-        DOL_GULDUR("Dol Guldur"),
-        MISTY_MOUNTAINS("Misty Mountains"),
-        GREY_MOUNTAINS("Grey Mountains");
+        MORDOR("Мордор"),
+        DOL_GULDUR("Дол Гулдур"),
+        MISTY_MOUNTAINS("Мглистые Горы"),
+        GREY_MOUNTAINS("Серые Горы");
 
         private final String displayName;
 
@@ -72,9 +73,9 @@ public class Ork {
     }
 
     public enum OrkType {
-        BASIC("Basic"),
-        COMMANDER("Commander"),
-        SCOUT("Scout");
+        BASIC("Базовый"),
+        COMMANDER("Командир"),
+        SCOUT("Разведчик");
 
         private final String displayName;
 

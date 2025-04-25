@@ -2,23 +2,23 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.sayronarmy.gearFactories;
+package com.mycompany.sayronarmy.model.gearFactories;
 
 /**
  *
  * @author lihac
  */
-public class MistyMountainsGearFactory implements OrkGearFactory {
-    @Override
+public class DolGuldurGearFactory implements OrkGearFactory{
+    @Override 
     public String createWeapon() {
-        return "Топор";
+        return "Копье";
     }
     @Override 
     public String createArmor() {
-        return "Кожаная броня";
+        return "Кольчуга";
     }
     @Override 
     public String createBanner() {
-        return "Знамя с Луной";
+        return "Знамя с пауком";
     }
 }

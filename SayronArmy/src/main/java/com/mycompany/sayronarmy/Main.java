@@ -1,17 +1,17 @@
 package com.mycompany.sayronarmy;
 
-import com.mycompany.sayronarmy.gui.SayronArmyGui;
+import com.mycompany.sayronarmy.controller.ArmyController;
 import javax.swing.SwingUtilities;
 
 /**
  *
  * @author lihac
  */
-public class SayronArmy {
+public class Main {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
-            SayronArmyGui gui = new SayronArmyGui();
-            gui.setVisible(true);
+            ArmyController controller = new ArmyController();
+            controller.launchApplication();
         });
     }
 }
